@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Goblin+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Scope+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>UFC STATS</title>
+</head>
+
+
+<body>
+    <main>
+        <!--Navbar-->
+        <div class="nav">
+            <ul class='nav-list'>
+                <li><a href="#a">ISREAL ADESANYA</a></li>
+                <li  class="logo"><img src='UFC_LOGO.jpg' height='100px' width="100px"></li>
+                <li><a href="#b">YOEL ROMERO</a></li>
+            </ul>
+        </div>
+        <br>
+
+        <!--Isreal stats section-->
+        <section>
+            <div id="a">
+                <div class="pic_stats_row">
+                    <div data-aos="fade-right" class="Isreal-pic">
+                        <img class="I_1" src="UFC_I_P.jpg">
+                    </div>
+                    <ul data-aos="fade-left" class="Isreal-stats">
+                        <li class="name-color">NAME: ISREAL ADESANYA</li>
+                        <li>AGE:30</li>
+                        <li>Height:6'4" </li>
+                        <li>Weight: 185lb (84kg)</li>
+                        <li>Knockouts:14</li>
+                        <li>Wins:18</li>
+                        <li>Loss:0</li>
+                        <li>Draw:0</li>
+                    </ul>
+                </div>
+
+               
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <!--Isreal quote section-->
+                <div class="pic_stats_row">
+                    <div data-aos="fade-right" class="Isreal-pic">
+                        <img class="I_2" id="" src="UFC_I_A.jpg">
+                    </div>
+
+                    <div  data-aos="fade-left" >
+                        <ul class="Isreal-quote">
+                            <li>"I WANT TO TEST MYSELF AGAINST</li>
+                            <li>EVERYONE OF THIS ERA WHO'S A BEAST</li>
+                            <li>AND HE'S A BEAST"</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+        <!--Yoel stats section-->
+
+        <section id="b">
+            <div class="fighter2">
+                <div class="pic_stats_row">
+                    <div data-aos="fade-right">
+                        <img class="R_1" id="" src="UFC_Y_P.jpg">
+                    </div>
+                    <ul data-aos="fade-left" class="Yoel-stats">
+                        <li class="name-color">Name:Yoel Romero</li>
+                        <li>Age:42</li>
+                        <li>Height:5'11' </li>
+                        <li>Weight: 185lb (84kg)</li>
+                        <li>Knockouts:11</li>
+                        <li>Wins:13</li>
+                        <li>Loss:4</li>
+                        <li>Draw:0</li>
+                    </ul>
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+
+                <!--Yoel quote section-->
+                <div class="pic_stats_row">
+                    <div>
+                        <img data-aos="fade-right" class="R2" id="Romero" src="UFC_Y_R.jpg">
+                    </div>
+                    <div>
+                        <ul data-aos="fade-leftt" class="Yoel-quote">
+                            <li>"I'll see you soon boy!"</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <!-- ***** Imported Scripts ***** -->
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+
+
+    <!-- ***** My Scripts ***** -->
+    <script>
+        // --------------------------------------------
+        // Initialize Animate On Scroll
+        AOS.init({
+            duration: 2000,
+            once: false,
+            mirror: false
+        });
+
+        AOS.refresh();
+
+        // --------------------------------------------
+        // Waypoints
+
+        ['a', 'b'].forEach(function (id) {
+            new Waypoint({
+                element: document.getElementById(id),
+                handler: function () {
+                    selectNav('#' + id)
+                }
+            })
+        })
+
+        // -------------------------------------------
+     
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
